@@ -1,0 +1,28 @@
+---- 14/09/2023
+------ API local na prática, simulando e consumindo com VSCode:
+---> JSON Server:
+- vamos usar a biblioteca "JSON Server", mas não vamos instalar, apenas executar com o npx.
+- criar um projeto e uma arquivo que será servido pela api.
+- criar a estrutura apiData/db.json, e popular esse arquivo com os dados a serem servidos.
+
+---> Rodando a API:
+- no terminal navegar até a pasta do projeto e executar " npx json-server -p 3500 ./apiData/db.json " 
+    - explicação do comando acima: depois de informar npx json-server, informamos a porta, no caso 3500 e o local
+        onde está o arquivo a ser servido pela API.
+- endereço gerado " http://localhost:3500/movies ".
+- obs: se fizer alguma alteração no arquivo db.json e não refletir, pare a execução da api e execute novamente.
+
+---> Usando a extensão Rest Client no VSCode:
+- instalar essa extensão no VSCode.
+- criar o arquivo "api.rest" na raiz no projeto.
+- para criar uma requisição GET, segue comando " GET http://localhost:3500/movies HTTP/1.1 ", 
+    depois disso clique no botão "Send Request" localizado acima da instrução.
+- Obs: tive um problema que deu erro ao tentar executar send request, então tive que parar a execução da api
+    e iniciar novamente mas desta vez passando o host " npx json-server -p 3500 -H 127.0.0.1 ./apiData/db.json ".
+- Obs.2: na chamada da requisição no arquivo api.rest, tanto faz se deixar localhost ou 127.0.0.1.
+- neste arquivo api.rest tenho que separar uma requisição da outra usando o ### .
+
+---> Usando um endereço publico externo como font para dados da api:
+- endereço de exemplo " s3.emerson.link/prints/shoes.json "
+- ficaria assim na hora de dar start na api:
+    - " npx json-server -p 3500 -H 127.0.0.1 s3.emerson.link/prints/shoes.json "

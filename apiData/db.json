@@ -1,0 +1,46 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "007 - Sem Tempo para Morrer",
+      "watched": true
+    },
+    {
+      "id": 2,
+      "title": "Megatubarão 2",
+      "watched": true
+    },
+    {
+      "title": "The Flash 2",
+      "id": 3,
+      "watched": false
+    },
+    {
+      "title": "Missão Impossível - Nação Secreta",
+      "watched": true,
+      "id": 4
+    },
+    {
+      "title": "Missão Impossível - Efeito Fallout",
+      "watched": true,
+      "id": 5
+    },
+    {
+      "title": "Missão Impossível - Protocolo Fantasma",
+      "watched": true,
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Andrea Lemos",
+      "email": "andrea.lemos@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Andrea Lemos",
+      "email": "andrea.lemos@gmail.com"
+    }
+  ]
+}
