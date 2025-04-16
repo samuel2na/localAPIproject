@@ -41,6 +41,11 @@
       "id": 2,
       "name": "Andrea Lemos",
       "email": "andrea.lemos@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Camila Lemos",
+      "email": "camila.lemos@gmail.com"
     }
   ]
 }
